@@ -1,0 +1,12 @@
+AddDefaultCharset utf-8
+
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_FiLENAME} !-f
+RewriteCond %{REQUEST_FiLENAME} !-d
+
+
+RewriteRule ^(.*)$ index.php
+
+
